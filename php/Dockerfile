@@ -1,5 +1,4 @@
 FROM php:8-fpm
 
-RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo pdo_pgsql
-RUN apt-get clean
+RUN apt-get update && apt-get install -y libpq-dev && apt-get clean && docker-php-ext-install pdo pdo_pgsql mysqli
 
