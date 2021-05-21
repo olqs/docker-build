@@ -40,7 +40,7 @@ def hello():
               },
               'endpoints' : 'https',
               'rule' : 'Host(`mailtest.worli.info`)',
-              'service' : 'nginx-mailcow',
+              'service' : 'nginx-mailcow@docker',
             }
           }
         }
