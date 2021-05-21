@@ -48,7 +48,7 @@ def hello():
     }
     response = yaml.dump(traefik_config)
         
-    return Response(response, mimetype='text/plain')
+    return Response(response, mimetype='text/yaml')
   except Exception as e:
     print(e)
   finally:
