@@ -29,19 +29,17 @@ def hello():
       subdomains = ["main", "imap", "smtp", "pop3", "autodiscover", "autoconfig", "webmail", "email", "mailtest"]
       domains = [ domain + "." + row[0] for domain in subdomains]
       tls_domains += [ { 'main' : "mail." + row[0], 'sans' : domains }]
-    traefik_config = {'traefik' : 
-      { 'http' : 
-        { 'routers' : 
-          { TRAEFIK_ROUTER : 
-            { 'tls' : 
-              { 
-                'domains' : tls_domains,
-                'certresolver' : 'http'
-              },
-              'endpoints' : 'https',
-              'rule' : 'Host(`mailtest.worli.info`)',
-              'service' : 'nginx-mailcow@docker',
-            }
+    traefik_config = { 'http' : 
+      { 'routers' : 
+        { TRAEFIK_ROUTER : 
+          { 'tls' : 
+            { 
+              'domains' : tls_domains,
+              'certresolver' : 'http'
+            },
+            'endpoints' : 'https',
+            'rule' : 'Host(`mailtest.worli.info`)',
+            'service' : 'nginx-mailcow@docker',
           }
         }
       }
