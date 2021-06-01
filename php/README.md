@@ -8,7 +8,7 @@ Image build on top off the official php 8-fpm container
 * exif
 * zip
 
-Caution: Imagick is compiled from source from the master branch
+Caution: Imagick is compiled from source from the master branch, not fully working
 
 ## Added software
 * msmtp linked to /usr/bin/sendmail, configuration file /etc/msmtprc not included, see https://marlam.de/msmtp/documentation/ for details
