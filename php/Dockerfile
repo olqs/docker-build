@@ -1,7 +1,7 @@
 FROM php:8-fpm
 
 RUN apt-get update && \
-  apt-get install -y msmtp libpq-dev zlib1g-dev libpng-dev \
+  apt-get install -y msmtp libzip-dev libpq-dev zlib1g-dev libpng-dev \
     git libmagickwand-dev libmagickcore-6.q16-6-extra && \
   apt-get clean && \
   ln -s /usr/bin/msmtp /usr/sbin/sendmail && \
