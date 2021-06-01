@@ -5,6 +5,8 @@ Image build on top off the official php 8-fpm container
 * mysqli
 * gd
 * imagick
+* exif
+* zip
 
 Caution: Imagick is compiled from source from the master branch
 
