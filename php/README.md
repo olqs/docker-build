@@ -4,6 +4,9 @@ Image build on top off the official php 8-fpm container
 * pdo_pgsql
 * mysqli
 * gd
+* imagick
+
+Caution: Imagick is compiled from source from the master branch
 
 ## Added software
 * msmtp linked to /usr/bin/sendmail, configuration file /etc/msmtprc not included, see https://marlam.de/msmtp/documentation/ for details
