@@ -6,6 +6,6 @@ RUN apt-get update && \
   apt-get clean && \
   ln -s /usr/bin/msmtp /usr/sbin/sendmail && \
   git clone https://github.com/Imagick/imagick /usr/src/php/ext/imagick && \
-  docker-php-ext-install pdo pdo_pgsql mysqli gd imagick exif zip && \
-  apt remove -y git libmagickwand-dev && apt -y autoremove && apt clean
+  docker-php-ext-install pdo pdo_pgsql mysqli gd imagick exif zip # && \
+#  apt remove -y git libmagickwand-dev && apt -y autoremove && apt clean
 
