@@ -1,5 +1,5 @@
 # olqs/php
-Image build on top off the official php 8-fpm container
+Image build on top off the official php 8-fpm-alpine container
 ## Added php modules
 * pdo_pgsql
 * mysqli
